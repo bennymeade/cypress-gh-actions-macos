@@ -10,6 +10,12 @@ jobs:
       - name: Install dependencies
         run: yarn install
 
+      - name: Install dependencies
+        uses: cypress-io/github-action@v4
+        with:
+          # just perform install
+          runTests: false
+
       # - name: Install dependencies
       #   uses: cypress-io/github-action@v4
       #   with:
