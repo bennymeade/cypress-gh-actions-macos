@@ -7,14 +7,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      # - name: Install dependencies
-      #   run: yarn install
-
       - name: Install dependencies
-        uses: cypress-io/github-action@v3
-        with:
-          # just perform install
-          runTests: false
+        run: yarn install
+
+      # - name: Install dependencies
+      #   uses: cypress-io/github-action@v3
+      #   with:
+      #     # just perform install
+      #     runTests: false
 
       # - name: Install dependencies
       #   uses: cypress-io/github-action@v4
@@ -38,5 +38,5 @@ jobs:
         uses: cypress-io/github-action@v3
         with:
           # install: false
-          browser: chrome
+          browser: webkit
           # command: yarn cypress run
