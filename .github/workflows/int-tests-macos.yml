@@ -7,6 +7,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
+      - name: Install dependencies
+        run: yarn install
+
       # - name: Install dependencies
       #   uses: cypress-io/github-action@v4
       #   with:
