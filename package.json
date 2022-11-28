@@ -1,0 +1,12 @@
+{
+  "name": "cypress-gh-actions-macos",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/bennymeade/cypress-gh-actions-macos.git",
+  "author": "bennymeade <brendan_meade@yahoo.co.uk>",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^11.2.0",
+    "playwright-webkit": "^1.28.1"
+  }
+}

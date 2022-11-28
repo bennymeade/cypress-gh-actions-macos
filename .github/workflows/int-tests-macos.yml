@@ -1,0 +1,32 @@
+name: ci
+on: [push]
+jobs:
+  tests:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      # - name: Install dependencies
+      #   uses: cypress-io/github-action@v4
+      #   with:
+      #     # install WebKit browser dependencies
+      #     build: npx playwright install-deps webkit
+      #     runTests: false
+
+      # - name: Cypress run
+      #   uses: cypress-io/github-action@v4
+      #   with:
+      #     # we have already installed everything
+      #     install: false
+      #     # check the spec types
+      #     build: npm run lint
+      #     # start the application before running Cypress
+      #     start: npm run start-quiet
+      #     browser: webkit
+
+      - name: Run tests - safari
+        uses: cypress-io/github-action@v4
+        with:
+          install: false
+          command: yarn cypress run
