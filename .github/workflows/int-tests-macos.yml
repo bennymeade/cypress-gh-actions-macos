@@ -37,6 +37,6 @@ jobs:
       - name: Run tests - safari
         uses: cypress-io/github-action@v4
         with:
-          install: false
-          browser: webkit
-          command: yarn cypress run
+          # install: false
+          browser: chrome
+          # command: yarn cypress run
